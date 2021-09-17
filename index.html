@@ -7,25 +7,24 @@ ColorPicker
 </title>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/hsv.js"></script>
-</head>
 
-<body>
+</head>
 
 <h2>Enter RGB Values</h2>
 
 <form name="hsv">
 R:
-<input onClick="this.select();" type="text" name="R" size="5" value="255" maxlength="3";>
+<input onClick="this.select();" type="text" name="R" size="5" value="255" maxlength="3" style="width:32px;">
 G:
-<input onClick="this.select();" type="text" name="G" size="5" value="255" maxlength="3";>
+<input onClick="this.select();" type="text" name="G" size="5" value="255" maxlength="3" style="width:32px;">
 B:
-<input onClick="this.select();" type="text" name="G" size="5" value="255" maxlength="3";>
+<input onClick="this.select();" type="text" name="B" size="5" value="255" maxlength="3" style="width:32px;">
 
 <input type="button" name="btn" value="Convert to HSV" onclick="rgb2hsv(this.form.R.value,this.form.G.value,this.form.B.value);
-this.form.H.value=computedH.toFixed(1);
-this.form.S.value=computedS.toFixed(4);
-this.form.V.value=computedV.toFixed(4);
-">
+	this.form.H.value=computedH.toFixed(1);
+	this.form.S.value=computedS.toFixed(4);
+	this.form.V.value=computedV.toFixed(4);
+	">
 
 H:
 <input type="text" size="6" name="H">
