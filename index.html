@@ -14,11 +14,11 @@ ColorPicker
 
 <form name="hsv">
 R:
-<input type="text" name="R" size="5" value="255" maxlength="3";>
+<input onClick="this.select();" type="text" name="R" size="5" value="255" maxlength="3";>
 G:
-<input type="text" name="G" size="5" value="255" maxlength="3";>
+<input onClick="this.select();" type="text" name="G" size="5" value="255" maxlength="3";>
 B:
-<input type="text" name="G" size="5" value="255" maxlength="3";>
+<input onClick="this.select();" type="text" name="G" size="5" value="255" maxlength="3";>
 
 <input type="button" name="btn" value="Convert to HSV" onclick="rgb2hsv(this.form.R.value,this.form.G.value,this.form.B.value);
 this.form.H.value=computedH.toFixed(1);
