@@ -14,6 +14,9 @@ function rgb2hsv (r,g,b) {
  var g = parseInt( (''+g).replace(/\s/g,''),10 ); 
  var b = parseInt( (''+b).replace(/\s/g,''),10 ); 
 
+// Change color box to entered color
+document.getElementById("box").style.background = "rgb(" + r + ", " + g + ", " + b + ")";
+
  if ( r==null || g==null || b==null ||
      isNaN(r) || isNaN(g)|| isNaN(b) ) {
    alert ('Please enter numeric RGB values!');
